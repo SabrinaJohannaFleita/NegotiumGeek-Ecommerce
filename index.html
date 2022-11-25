@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Negotium</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-busqueda">
+                <div class="logo">
+                    <img src="assets\logo-negotium.png" alt="logo">
+                    <h1>Negotium Geek</h1>
+                </div>
+
+                <input i type="text" placeholder="Qué deseas buscar?                                   🔍︎">
+            </div>
+            
+            <div class="navbar__cart-icon">
+                <div class="home__icon">
+                    <img src="assets/house-solid.svg" alt="home-icon">
+                </div>
+                <div class="navbar__cart">
+                    <img class="cart-menu" src="assets/cart-shopping-solid.svg" alt="cart-icon">
+                </div>
+               
+               
+            </div>
+            
+            <div class="login">
+                <a href="login.html"><button type="submit">Login</button></a>
+        </div>
+             <!-- Menu Hamburguesa -->
+             <div class="menu-btn nav-toggle">
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <ul class="nav-menu">
+        <li ><a class="nav-menu-item active-menu-item" href="#header">Home</a></li>
+        <li><a class="nav-menu-item" data-nav="header" href="login.html">Mi cuenta</a></li>
+        <li><a class="nav-menu-item" data-nav="populares" href="#populares">Populares</a></li>
+        <li><a class="nav-menu-item" data-nav="categorias" href="#categorias">Categorias</a></li>
+        <li><a class="nav-menu-item" data-nav="about" href="#about">About</a></li>
+
+    </ul>
+
+    <section class="destaque">
+       <h2>"Solía avergonzarme porque sólo era un escritor de cómics, mientras que otras personas construían puentes o pasaban carreras médicas. Y luego comencé a darme cuenta: el entretenimiento es una de las cosas más importantes en la vida de las personas. Sin ello, podrían irse al extremo profundo. Creo que si eres capaz de entretener a la gente, estás haciendo algo bueno"-Stan Lee</h2>
+    </section>
+
+        
+     <!-- Carrito -->
+     <div class="cart">
+        <span class="close" id="close">x</span>
+        <h2>Tus Productos</h2>
+        <div class="cart-container">
+            
+        </div>
+        <div class="cart-subtotal">
+            <div class="sub">
+                <p>Subtotal:</p>
+                <span class="sub-total">$0.00</span>
+            </div>
+            <div class="envio">
+                <p>Envio:</p>
+                <span class="free">Gratis</span>
+            </div>
+        </div>
+        <span class="divider"></span>
+        <div class="cart-total">
+            <p>Total:</p>
+            <span class="total">$0.00</span>
+        </div>
+        <div class="btn-cart">
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-delete">Vaciar carrito</button>
+        </div>
+
+          <div class="show-more">
+            <a class="cart-link" href="#categorias">Ver más productos</a>
+          </div>
+        </div>
+        <div class="overlay"></div> 
+
+
+    <section class="container-recomendaciones" id="populares">
+        <h2 class="h2-recom">Hoy te recomendamos</h2>
+        <div class="cards-recom"> 
+
+        </div>
+    </section>
+    <section class="container-categories" id="categorias">
+        <h2 class="texto-categorias">Categorias</h2>
+        <div class="container-cards-category">
+            <div class="category active">
+                <img class="category-active" id="category-imggg" src="assets/populares.jpg" alt="imagen">
+                 <h3 class="texto-categorias">Populares</h3>
+                <div class="rectangulito"></div>
+                 </div>
+            <div class="category" data-category="marvel">
+                <img id= "category-img" class="category" src="assets/Marvel_Studios_logo.jpg" alt="marvel-img">
+                <h3 class="texto-categorias">Marvel</h3>
+                <div class="rectangulito"></div>
+            </div>
+            <div class="category" data-category="DC">
+                <img id="category-imgg" class="category" src="assets/DC_Comics_logo.png" alt="dc">
+                <h3 class="texto-categorias">DC</h3>
+                <div class="rectangulito"></div>
+            </div>
+        </div>
+
+        <div class="container-products">
+            <h2 class="texto-categorias" id="title">Lo más populares</h2>
+            <div class="container-cards-product">
+
+            </div>
+        </div>
+    </section>
+    <section class="section-batman-fondo">
+     <img class="fondo-batman" src="assets/fondo-batman.jpg" alt="batman-fondo">
+    </section>
+</main>    
+
+
+    <section class="contacto">
+            <div class="referencia">
+                <img src="assets/logo-negotium.png" alt="logo">
+                <p>Negotium</p><p>Geek</p>
+            </div>
+
+            <div class="links-utiles">
+                <a href="#">Quienes somos</a> <br>
+                <a href="#">Política de Privacidad</a> <br>
+                <a href="#">Programa de fidelidad</a> <br>
+                <a href="#">Nuestras Tiendas</a> <br>
+                <a href="#">Quiero ser franquiciado</a> <br>
+                <a href="#">Anuncie aqui</a>
+            </div>
+
+            <div class="form">
+                <p class="texto-categorias">Hable con nosotros</p>
+                    <div class="label-float">
+                      <input type="text" name="Nome" id="Nome" class="input-nombre" placeholder="Nombre">
+                      
+                    </div>
+                
+                    <textarea name="mensagem" id="msg" cols="5" rows="5"></textarea>
+                <button>Enviar Mensaje</button>
+            </div>
+    </section> 
+    <footer id="about">
+        <div class="footer-text">
+            <a href="#">Términos de Uso</a>
+            <a href="#">Trabajá con Nosotros</a>
+            <a href="#">Soporte</a>
+        </div>
+       
+    </footer>
+    <div class="add-modal"></div>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

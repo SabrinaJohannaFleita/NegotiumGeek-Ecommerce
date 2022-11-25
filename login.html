@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <section class="contenedorS">
+            <form class="form" id="form" action="">
+                <fieldset>
+                    <legend>Crea tu cuenta</legend>
+                    <div class="contenedorDiv">
+                        <div class="campo">
+                            <label for="">Nombre</label>
+                            <input type="text" id="username" name="nombre" class="nombre" placeholder="Tu Nombre" autocomplete="off">
+                            <small></small>
+                        </div>
+                        <div class="campo">
+                            <label for="">E-mail</label>
+                            <input type="text" id="email" name="email" class="email" placeholder="Tu E-mail" autocomplete="off">
+                            <small></small>
+                        </div>
+                        <div class="campo">
+                            <label for="">Teléfono</label>
+                            <input type="tel" id="phone" name="telefono" class="telefono" placeholder="Tu Teléfono" autocomplete="off">
+                            <small></small>
+                        </div>
+                        <div class="campo">
+                            <label for="">Contraseña</label>
+                            <input type="password" id="password" name="contrasena" class="contrasena" placeholder="Tu Contraseña" autocomplete="off">
+                            <small></small>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <input type="submit" class="botonPrincipal" value="Enviar">
+                    </div>
+                    <h3><a href="index.html">volver</a></h3>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
