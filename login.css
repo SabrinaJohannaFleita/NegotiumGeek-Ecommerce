@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+html{
+    font-size: 65.5%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: 100vh;
+    width: 100%;
+    background: lightblue;
+}
+
+
+
+form{
+    background: linear-gradient(98.81deg, #2a7ae4 -0.82%, #d17f9a 101.53%);
+    width: min(60rem, 100%);
+    border-radius: 2rem;
+    box-shadow: 22px 22px;
+    position: relative;
+    overflow: hidden;
+    margin: 2rem 0 0 0; 
+}
+
+
+legend{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    padding-top: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+.contenedorS form fieldset{
+    border: none;
+    padding: 2rem;
+    width: 25em;
+
+}
+
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: white;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    display: block;
+}
+
+.campo input{
+    
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    height: 4rem;
+    background-color: rgba(245, 245, 220, 0.454);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+
+input::placeholder{
+    color: rgba(245, 245, 220, 0.454);
+    padding: 2rem;
+
+}
+
+input:hover{
+    background-color: rgba(212, 212, 210, 0.680);
+}
+
+.boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonPrincipal{
+    border: none;
+    width: 60%;
+    color: white;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    margin: 2rem 0 0 0;
+    height: 4rem;
+    font-weight: 400;
+    background-color: rgba(245, 245, 220, 0.454) ;
+}
+
+
+h3{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.botonPrincipal:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #2a7ae4;
+    width: 65%;
+    
+}
+a:hover{
+    cursor: pointer;
+    color: var(--dark-black);
+    font-size: 2rem;
+}
+
+form::before{
+    content: "";
+    position: absolute;
+    justify-content: center;
+    height: 100%;
+    width: 6%;
+    box-shadow: 0px 0px 50rem;
+}
+
+@keyframes mover {
+    0% {left: 0%;}
+    
+    100%{left: 140%;}
+    
+}
+
+
+
+   
