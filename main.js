@@ -5,7 +5,7 @@ const categoriesList = document.querySelectorAll('.category');
 // Titulo de las cards
 const title = document.getElementById('title');
 // Contenedor donde se renderiza las cards
-const renderProduct = document.querySelector('.container-cards-product');
+const renderFood = document.querySelector('.container-cards-elementos');
 // Contenedor de las cards (Hoy te recomendamos)
 const renderRecom = document.querySelector('.cards-recom');
 // Carrito
@@ -38,10 +38,10 @@ const saveLocalStorage = (cartList) => {
     localStorage.setItem('cart', JSON.stringify(cartList));
 }
 
-const renderCard = (productosgeek) => {
-    const {id, name, description, prize, img} = productosgeek;
+const renderCard = (food) => {
+    const {id, name, description, prize, img} = food;
     return `
-    <div class="cards-prodGeek">
+    <div class="cards-comida">
     <img src="${img}" alt="${name}">
     <h3>${name}</h3>
     <p>${description}</p>
@@ -59,14 +59,14 @@ const renderCard = (productosgeek) => {
 }
 
 const renderCards = () => {
-    renderProduct.innerHTML += productosgeek.map(renderCard).join("");
+    renderFood.innerHTML += carta.map(renderCard).join("");
 };
 
-const renderFilteredGeek = (category) => {
-    const geekList = productosgeek.filter(
-      (productosgeek) => productosgeek.category === category
+const renderFilteredFood = (category) => {
+    const foodList = carta.filter(
+      (food) => food.category === category
     );
-    renderProduct.innerHTML = geekList.map(renderCard).join("");
+    renderFood.innerHTML = foodList.map(renderCard).join("");
 };
 
 const renderProducts = (category = undefined) => {
@@ -74,7 +74,7 @@ const renderProducts = (category = undefined) => {
     renderCards();
     return;
   }
-  renderFilteredGeek(category);
+  renderFilteredFood(category);
 }
 
 const changeFilterState = (e) => {
@@ -97,7 +97,7 @@ const applyFilter = (e) => {
     if (!e.target.classList.contains("category")) return;
     changeFilterState(e);
     if (!e.target.dataset.category) {
-      renderProducts.innerHTML = "";
+      renderFood.innerHTML = "";
       title.innerHTML = 'Los más populares'
       renderProducts();
     } else {
@@ -110,8 +110,8 @@ const applyFilter = (e) => {
     };
 };
 
-const renderCardRecom = (productosgeek) => {
- const {id, img, name, description, prize} = productosgeek;
+const renderCardRecom = (food) => {
+ const {id, img, name, description, prize} = food;
   return ` 
   <div class="card">
   <img src="${img}" alt="${name}">
@@ -131,7 +131,7 @@ const renderCardRecom = (productosgeek) => {
 };
 
 const renderCardsRecom = () => {
-   renderRecom.innerHTML += productosgeek.slice(0, 3).map(renderCardRecom)
+   renderRecom.innerHTML += carta.slice(0, 3).map(renderCardRecom)
     .join("");
 };
 
@@ -368,7 +368,7 @@ const init = () => {
     closeBtn.addEventListener('click', closeOnClickButton);
     document.addEventListener('DOMContentLoaded', renderCart);
     document.addEventListener('DOMContentLoaded', showTotal);
-    renderProduct.addEventListener('click', addProduct);
+    renderFood.addEventListener('click', addProduct);
     renderRecom.addEventListener('click', addProduct);
     productsCart.addEventListener('click', handleQuantity);
     buyBtn.addEventListener('click', completeBuy);

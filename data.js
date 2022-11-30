@@ -1,11 +1,11 @@
-const productosgeek = [
+const carta = [
     {
         id : 1,
         name : 'Muñeco Ant-Man',
         description : '“Sólo una pregunta: ¿ya es tarde para cambiar el nombre?”',
         prize : 4000,
         img : 'assets/antman.jpg',
-        category : 'Marvel',
+        category : 'marvel',
     } ,
     {
         id : 2,
@@ -13,7 +13,7 @@ const productosgeek = [
         description : '"Si estás interesado en lo que haces, ¡eso te hace seguir continuando!".',
         prize : 5000,
         img : 'assets/buzo-marvel.jpg',
-        category : 'Marvel',
+        category : 'marvel',
     } ,
     {
         id : 3,
@@ -21,7 +21,7 @@ const productosgeek = [
         description : 'Elige tu comic.',
         prize : 1200,
         img : 'assets/comics.jpg',
-        category: 'DC',
+        category: 'marvel',
     } ,
     {
         id : 4,
@@ -29,7 +29,7 @@ const productosgeek = [
         description : ' Ant-Man + Iron Man + Capitan America. “Si no podemos proteger la Tierra, puedes estar seguro de que la vengaremos” ',
         prize : 10000,
         img : 'assets/conjunto-deFiguras-Avengers.jpg',
-        category : 'Marvel',
+        category : 'marvel',
     } ,
     {
         id : 5,
@@ -37,7 +37,7 @@ const productosgeek = [
         description : '"Puedes quitarme mi casa, todos mis trucos y trajes, pero hay una cosa que jamás podrás quitarme: Yo soy Iron Man."',
         prize : 3500,
         img : 'assets/cuadro-ironman.jpg',
-        category : 'Marvel',
+        category : 'marvel',
     } ,
     {
         id : 6,
@@ -45,7 +45,7 @@ const productosgeek = [
         description : '"Un gran poder conlleva una gran responsabilidad"',
         prize : 12000,
         img : 'assets/Disfraz-spiderman.jpg',
-        category : 'Marvel',
+        category : 'marvel',
     } ,
     {
         id : 7,
@@ -53,7 +53,7 @@ const productosgeek = [
         description : '“Si tu pierna izquierda es Acción de gracias, y la derecha es Navidad, ¿te puedo visitar entre las fiestas?”',
         prize : 4500,
         img : 'assets/figura-deadpool.jpg',
-        category : 'Marvel',
+        category : 'marvel',
     } ,
     {
         id : 8,
@@ -61,7 +61,7 @@ const productosgeek = [
         description : '"¿Sabes cuál es el más grande regalo que alguien puede recibir en toda su vida? El mejor regalo que podemos recibir es tener la oportunidad, una sola vez en nuestras vidas, de hacer la diferencia." — Doctor la estranio :c',
         prize : 10000,
         img : 'assets/figura-DrLaestranio.jpg',
-        category : 'Marvel',
+        category : 'marvel',
     } ,
     {
         id : 9,
@@ -69,7 +69,7 @@ const productosgeek = [
         description : '"Yo soy Groot"',
         prize : 700,
         img : 'assets/groot.jpg',
-        category : 'Marvel',
+        category : 'marvel',
     } ,
     {
         id : 10,
@@ -77,7 +77,7 @@ const productosgeek = [
         description : 'Sí, sí. Es el traje real de Iron Man porque somos la mejor tienda 😎 Precio en USD. "No es suficiente estar en contra, tienes que estar a favor de algo mejor."',
         prize : 200000000,
         img : 'assets/ironman-trajereal.jpg',
-        category : 'Marvel',
+        category : 'Mmrvel',
     } ,
     {
         id : 11,
@@ -85,7 +85,7 @@ const productosgeek = [
         description : '"Yo soy Thor, hijo de Odín y mientras haya vida en mi pecho… No se me ocurre más nada que decir. ¿Estás listo para morir?"',
         prize : 40000,
         img : 'assets/martilloThor-tamañoReal.jpg',
-        category : 'Marvel',
+        category : 'marvel',
     } ,
     {
         id : 12,
@@ -93,7 +93,7 @@ const productosgeek = [
         description : '"Haría esto todo el día","Incluso cuando no tenía nada, tenía a Bucky🧡🧡🧡"',
         prize : 2500,
         img : 'assets/mouse-capAmerica.jpg',
-        category : 'Marvel',
+        category : 'DC',
     } ,
     {
         id : 13,
@@ -101,7 +101,7 @@ const productosgeek = [
         description : '"¿Es mejor ser temido o respetado? Yo digo, ¿es mucho pedir que sea ambos?"',
         prize : 15000,
         img : 'assets/vinilo-ironman.jpg',
-        category : 'Marvel',
+        category : 'marvel',
     } ,
     {
         id : 14,
