@@ -155,8 +155,11 @@ nav{
    text-align: center;
    display: flex;
    align-items: center;
+   color: white;
+   font-family: 'Roboto';
+   font-size: 25px;
+   -webkit-text-stroke: 0.6px black;
 }
-
     .banner{
       
       width: 90%;
