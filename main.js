@@ -59,11 +59,11 @@ const renderCard = (food) => {
 }
 
 const renderCards = () => {
-    renderFood.innerHTML += carta.map(renderCard).join("");
+    renderFood.innerHTML += stock.map(renderCard).join("");
 };
 
 const renderFilteredFood = (category) => {
-    const foodList = carta.filter(
+    const foodList = stock.filter(
       (food) => food.category === category
     );
     renderFood.innerHTML = foodList.map(renderCard).join("");
@@ -131,7 +131,7 @@ const renderCardRecom = (food) => {
 };
 
 const renderCardsRecom = () => {
-   renderRecom.innerHTML += carta.slice(0, 3).map(renderCardRecom)
+   renderRecom.innerHTML += stock.slice(0, 3).map(renderCardRecom)
     .join("");
 };
 

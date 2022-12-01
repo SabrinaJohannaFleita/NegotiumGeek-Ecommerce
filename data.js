@@ -1,4 +1,4 @@
-const carta = [
+const stock = [
     {
         id : 1,
         name : 'Muñeco Ant-Man',
