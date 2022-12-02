@@ -110,7 +110,7 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: 70px 50px;
     width: 100%;
 }
@@ -128,7 +128,7 @@ justify-content: space-around;
     flex-wrap: wrap;
     width: 95%;
     gap: 25px;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .cards-articulos {
