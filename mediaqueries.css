@@ -383,9 +383,9 @@
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
-
     nav {
-        padding: 20px 23px;
+        width: 100%;
+        
     }
     .logo img{
      display: none;
@@ -494,9 +494,13 @@
     }
     .destaque h2{
         font-size: 15px;
-    
+        width: 100%;
     }
     .logo-busqueda{
+        display: none;
+    }
+   
+    .home__icon{
         display: none;
     }
     .container-info {
