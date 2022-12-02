@@ -5,7 +5,7 @@ const categoriesList = document.querySelectorAll('.category');
 // Titulo de las cards
 const title = document.getElementById('title');
 // Contenedor donde se renderiza las cards
-const renderFood = document.querySelector('.container-cards-elementos');
+const renderArticulos = document.querySelector('.container-cards-elementos');
 // Contenedor de las cards (Hoy te recomendamos)
 const renderRecom = document.querySelector('.cards-recom');
 // Carrito
@@ -38,10 +38,10 @@ const saveLocalStorage = (cartList) => {
     localStorage.setItem('cart', JSON.stringify(cartList));
 }
 
-const renderCard = (food) => {
-    const {id, name, description, prize, img} = food;
+const renderCard = (articulos) => {
+    const {id, name, description, prize, img} = articulos;
     return `
-    <div class="cards-comida">
+    <div class="cards-articulos">
     <img src="${img}" alt="${name}">
     <h3>${name}</h3>
     <p>${description}</p>
@@ -59,14 +59,14 @@ const renderCard = (food) => {
 }
 
 const renderCards = () => {
-    renderFood.innerHTML += stock.map(renderCard).join("");
+    renderArticulos.innerHTML += stock.map(renderCard).join("");
 };
 
-const renderFilteredFood = (category) => {
-    const foodList = stock.filter(
-      (food) => food.category === category
+const renderFilteredArticulos = (category) => {
+    const articulosList = stock.filter(
+      (articulos) => articulos.category === category
     );
-    renderFood.innerHTML = foodList.map(renderCard).join("");
+    renderArticulos.innerHTML = articulosList.map(renderCard).join("");
 };
 
 const renderProducts = (category = undefined) => {
@@ -74,7 +74,7 @@ const renderProducts = (category = undefined) => {
     renderCards();
     return;
   }
-  renderFilteredFood(category);
+  renderFilteredArticulos(category);
 }
 
 const changeFilterState = (e) => {
@@ -97,7 +97,7 @@ const applyFilter = (e) => {
     if (!e.target.classList.contains("category")) return;
     changeFilterState(e);
     if (!e.target.dataset.category) {
-      renderFood.innerHTML = "";
+      renderArticulos.innerHTML = "";
       title.innerHTML = 'Los más populares'
       renderProducts();
     } else {
@@ -110,8 +110,8 @@ const applyFilter = (e) => {
     };
 };
 
-const renderCardRecom = (food) => {
- const {id, img, name, description, prize} = food;
+const renderCardRecom = (articulos) => {
+ const {id, img, name, description, prize} = articulos;
   return ` 
   <div class="card">
   <img src="${img}" alt="${name}">
@@ -368,7 +368,7 @@ const init = () => {
     closeBtn.addEventListener('click', closeOnClickButton);
     document.addEventListener('DOMContentLoaded', renderCart);
     document.addEventListener('DOMContentLoaded', showTotal);
-    renderFood.addEventListener('click', addProduct);
+    renderArticulos.addEventListener('click', addProduct);
     renderRecom.addEventListener('click', addProduct);
     productsCart.addEventListener('click', handleQuantity);
     buyBtn.addEventListener('click', completeBuy);

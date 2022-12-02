@@ -131,7 +131,7 @@ justify-content: space-around;
     margin-top: 20px;
 }
 
-.cards-comida {
+.cards-articulos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,20 +145,20 @@ justify-content: space-around;
     box-shadow: 0px 0px 8px rgba(1, 2, 7, 0.5)
 }
 
-.cards-comida img {
+.cards-articulos img {
     width: 100%;
     height: 200px;
     border-radius: 16px;
     object-fit: cover;
 }
 
-.cards-comida h3 {
+.cards-articulos h3 {
     font-size: 15px;
     font-weight: 500;
     color: black;
 }
 
-.cards-comida p {
+.cards-articulos p {
     font-size: 14px;
     font-weight: 400;
     color: black;
