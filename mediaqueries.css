@@ -461,7 +461,11 @@
         
     }
     
-
+    .navbar__cart{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
     .nav__menu-visible {
         pointer-events: auto;
         transform: translate(0%);
@@ -731,8 +735,13 @@
 
 
     /* Footer */
-    
-    
+    .section-batman-fondo{
+        height: 70%;
+    }
+    .fondo-batman{
+        height: 200px;
+        height: 70%;
+    }
     .footer-text {
         display: flex;
         flex-direction: column;
