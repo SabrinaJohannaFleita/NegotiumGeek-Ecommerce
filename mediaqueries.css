@@ -177,14 +177,20 @@
             margin-bottom: 50px;
         }
         div.footer-text{
-            margin-top: 100px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+
         }
         div.links-utiles{
             margin-top: 0;};
         }
         footer#about{
             margin-top: 0;
-            height: 1200px;
+            height: 860px;
+        }
+        div.form{
+            margin-top: 50px;
         }
 
 /* TABLET */
