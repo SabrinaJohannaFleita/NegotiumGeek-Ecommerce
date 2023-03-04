@@ -125,7 +125,37 @@
         #categorias{
             padding-top: 90px;
             margin-top: 90px;
+            margin-left: 0;
+            padding-left: 0;
         } 
+        .container-cards-category{
+        
+        }
+        div.category.active{
+            width: 20%;
+            height: 166px;
+            margin-left: 10px;
+        }
+        div.category {
+            width: 20%;
+            height: 166px;
+            margin-left: 10px;
+        }
+        .texto-categorias{
+            margin-left: 20px;
+        }
+        h3.texto-categorias{
+            margin-left: 0%;
+        }
+        h2#title.texto-categorias{
+            margin-left: 0;
+            padding-left: 0;
+        }
+        div.container-elementos{ 
+            margin-left: 0%;
+            padding-left: 0%;
+        }
+           
 }
 
 /* TABLET */
