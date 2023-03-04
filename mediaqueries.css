@@ -37,7 +37,9 @@
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    
+    #populares {
+        padding-left: 0%;
+    }
     .cards-recom {
         display: flex;
         justify-content:flex-start;
@@ -46,6 +48,7 @@
         height: 80%;
         margin: 0px;
         padding-left: 0%;
+
     }
     .h2-recom{
         color: black;
