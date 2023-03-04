@@ -155,7 +155,16 @@
             margin-left: 0%;
             padding-left: 0%;
         }
-           
+        div.container-cards-elementos{
+            margin-left: 40px;
+        }
+        div.cards-articulos{
+            width: 35%;
+        }
+        span.color{
+            margin-right: 5px;
+        }
+        
 }
 
 /* TABLET */
