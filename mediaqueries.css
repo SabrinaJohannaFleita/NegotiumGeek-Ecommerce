@@ -164,8 +164,28 @@
         span.color{
             margin-right: 5px;
         }
-        
-}
+        .refencia {
+            display: none;
+        }
+        section.contacto{
+            display: block;
+        }
+        .contacto{
+            padding-top: 0px;
+        }
+        div.referencia{
+            margin-bottom: 50px;
+        }
+        div.footer-text{
+            margin-top: 100px;
+        }
+        div.links-utiles{
+            margin-top: 0;};
+        }
+        footer#about{
+            margin-top: 0;
+            height: 1200px;
+        }
 
 /* TABLET */
 
