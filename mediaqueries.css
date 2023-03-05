@@ -775,10 +775,8 @@
     }
     
     .container-cards-elementos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        display: block;
+        
         width: 100%;
         gap: 50px;
         margin-top: 40px;
@@ -786,15 +784,15 @@
     }
     
     .cards-articulos {
-        padding: 15px 25px;
+        padding: 10px 20px;
         gap: 30px;
         height: 430px;
-        width: 70%;
+        width: 100%;
     }
     
     .cards-articulos img {
         width: 100%;
-        height: 200px;
+        height: 80px;
     }
 
     .cards-articulos h3 {
@@ -803,19 +801,19 @@
     }
 
     .cards-articulos p {
-        font-size: 18px;
+        font-size: 10px;
         font-weight: 500;
     }
 
     .precio .color {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 800;
     }
 
     .precio button {
-        height: 40px;
-        width: 120px;
-        font-size: 18px;
+        height: 35px;
+        width: 90px;
+        font-size: 10px;
         font-weight: 700;
         
     }
