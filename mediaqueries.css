@@ -803,6 +803,7 @@
     .cards-articulos p {
         font-size: 10px;
         font-weight: 500;
+        margin: 0;
     }
 
     .precio .color {
@@ -812,7 +813,7 @@
 
     .precio button {
         height: 35px;
-        width: 90px;
+        width: 80px;
         font-size: 10px;
         font-weight: 700;
         

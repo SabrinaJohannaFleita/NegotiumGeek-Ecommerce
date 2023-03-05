@@ -74,8 +74,8 @@ const stock = [
     {
         id : 10,
         name : 'Traje real de Iron Man',
-        description : 'Sí si, real porque somos la mejor tienda 😎. "No es suficiente estar en contra, tienes que estar a favor de algo mejor."',
-        prize : 200000000,
+        description : 'Real porque somos la mejor tienda 😎. "No es suficiente estar en contra, tienes que estar a favor de algo mejor."',
+        prize : 2000000,
         img : 'assets/ironman-trajereal.jpg',
         category : 'Mmrvel',
     } ,
