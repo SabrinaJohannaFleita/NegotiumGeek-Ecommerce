@@ -835,4 +835,7 @@
         text-align: center;
         gap: 30px;
     }
+    div.open-cart {
+    width: 80%;
+    }
 }
